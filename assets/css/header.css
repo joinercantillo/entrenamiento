@@ -103,10 +103,84 @@
         
         color: #38ec01;
     }
-    .nav_item_shop li:hover
+    .nav_menu li:hover .shop_menu {
+        display: block;
+    }
     .nav_item_category_menu:hover{
         color: #38ec01;
     }
+    /* Estilos del menú principal */
+.nav_menu {
+    display: flex;
+    gap: 20px;
+    background: #f8f8f8;
+    padding: 15px;
+    align-items: center;
+}
+
+.nav_container {
+    position: relative; /* "Ancla" para los submenús */
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Ocultar submenús por defecto */
+.shop_menu, 
+.category_menu {
+    display: none; /* Se ocultan */
+    position: absolute;
+    top: 100%;     /* Aparecen justo debajo */
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    z-index: 100;
+    min-width: 150px;
+}
+
+/* Lista del submenú SHOP */
+.shop_menu {
+    list-style: none;
+}
+
+.shop_menu li {
+    padding: 8px 0;
+}
+
+/* Submenú CATEGORY con imágenes */
+.category_menu {
+    display: none;
+    flex-direction: column; /* Una categoría debajo de otra */
+    width: 200px;
+}
+
+.nav_item_category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav_item_category img {
+    width: 20px; /* Tamaño de los iconos */
+    height: auto;
+}
+
+/* ✨ EL HOVER: Mostrar cuando el contenedor esté activo */
+.nav_container:hover .shop_menu,
+.nav_container:hover .category_menu {
+    display: flex; /* Se muestran al pasar el mouse */
+}
+
+/* Hover decorativo para los enlaces */
+.nav_menu a:hover {
+    color: green;
+}
+
 
 }
 
