@@ -1,0 +1,25 @@
+@import "assets/css/reset.css";
+@import "assets/css/header.css";
+@import "assets/css/buttons.css";
+@import "assets/css/environments.css";
+@import "assets/css/animations.css";
+@import "assets/css/main.css";
+@import "assets/css/cards.css";
+
+* {
+    font-family: Inter, sans-serif;
+}
+
+ion-icon {
+    flex-shrink: 0;
+    font-size: 2rem;
+}
+
+
+
+body {
+    background-color: #eee;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 60px 1fr 60px / 1fr;
+}

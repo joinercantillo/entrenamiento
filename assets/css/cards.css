@@ -1,0 +1,39 @@
+.card {
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    gap: 1rem;
+}
+
+.card img {
+    width: 30%;
+    height: 100%;
+    background-color: beige;
+    border-radius: 2px;
+}
+
+.card p {
+    display: none;
+}
+
+@media (min-width: 550px ){
+
+}
+
+@media (min-width: 1200px ){
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: 40%;
+        border-radius: 8px;
+    }
+
+    .card p {
+        display: block;
+    }
+
+}
