@@ -19,6 +19,6 @@ main {
     }
 
     main {
-        animation: slider 10s infinite;
+        animation: slider 10s;
     }
 }

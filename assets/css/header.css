@@ -63,7 +63,7 @@
     }
     .logo {
         position: absolute;
-        margin-right: 125vh;
+        margin-right: 110vh;
         display: flex;
         justify-content: flex-end;
     }
@@ -78,7 +78,38 @@
     
     padding: 10px;
     justify-content: space-between;
+    }
+    .nav_item_category_menu {
+        padding: 10px;
+        color: black;
+    }
+    .nav_item_shop {
+        color: black;
+    }
+    
+    .category_menu{
+        display: none;
+    }
+    .shop_menu {
+        display: none;
+    }
+
+    .nav_item:hover{
+        
+        color: #38ec01;
+        
+    }
+    .nav_item_shop:hover {
+        
+        color: #38ec01;
+    }
+    .nav_item_shop li:hover
+    .nav_item_category_menu:hover{
+        color: #38ec01;
+    }
+
 }
+
 
 
 }
